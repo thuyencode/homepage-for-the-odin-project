@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -5,6 +7,10 @@ export default {
     extend: {
       colors: {
         main: '#0791B1'
+      },
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        serif: ['Abhaya Libre', ...defaultTheme.fontFamily.serif]
       }
     }
   }
