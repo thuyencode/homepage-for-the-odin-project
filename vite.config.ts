@@ -4,7 +4,6 @@ import solid from 'vite-plugin-solid'
 import { webfontDownload } from 'vite-plugin-webfont-dl'
 
 export default defineConfig({
-  // Change this line
-  base: '/my-solid-daisyui-template/',
+  base: '/homepage-for-the-odin-project/',
   plugins: [solid(), simpleHtmlPlugin({ minify: true }), webfontDownload()]
 })
