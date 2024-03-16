@@ -9,8 +9,7 @@ export default {
         main: '#0791B1'
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        serif: ['Abhaya Libre', ...defaultTheme.fontFamily.serif]
+        sans: ['Inter', ...defaultTheme.fontFamily.sans]
       }
     }
   },
