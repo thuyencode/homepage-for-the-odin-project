@@ -13,5 +13,6 @@ export default {
         serif: ['Abhaya Libre', ...defaultTheme.fontFamily.serif]
       }
     }
-  }
+  },
+  plugins: [require('daisyui')]
 }
