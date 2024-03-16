@@ -22,7 +22,7 @@ const ProfilePicture: Component = () => {
           <Icon class='text-4xl' icon={'noto:waving-hand'} />
           Hi, I'm <span class='font-semibold'>Thuyen Code</span>!
         </h1>
-        <h2 class='capitalize'>A no-job developer</h2>
+        <h2>A job-less developer</h2>
       </figcaption>
     </figure>
   )

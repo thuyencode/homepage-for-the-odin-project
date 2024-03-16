@@ -36,17 +36,24 @@
     "id": "react"
   },
   {
-    "name": "Vite",
-    "icon": "skill-icons:vite-light",
-    "color": "#646cffaa",
-    "id": "vite"
-  },
-  {
     "name": "Next JS",
     "icon": "skill-icons:nextjs-light",
     "color": "#f4f2ed",
     "id": "nextjs"
   },
+  {
+    "name": "Solid JS",
+    "icon": "skill-icons:solidjs-light",
+    "color": "#76b3e1",
+    "id": "solidjs"
+  },
+  {
+    "name": "Vite",
+    "icon": "skill-icons:vite-light",
+    "color": "#646cffaa",
+    "id": "vite"
+  },
+
   {
     "name": "Rust",
     "icon": "skill-icons:rust",
@@ -64,11 +71,5 @@
     "icon": "skill-icons:linux-light",
     "color": "#ffc107",
     "id": "linux"
-  },
-  {
-    "name": "Solid JS",
-    "icon": "skill-icons:solidjs-light",
-    "color": "#dcf2fd",
-    "id": "solidjs"
   }
 ]
