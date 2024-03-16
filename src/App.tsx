@@ -1,12 +1,12 @@
 import { type Component } from 'solid-js'
 import Header from './components/Header'
-import MyWorks from './components/MyWorks'
+import MySkills from './components/MySkills'
 
 const App: Component = () => {
   return (
     <>
       <Header />
-      <MyWorks />
+      <MySkills />
     </>
   )
 }
