@@ -1,8 +1,9 @@
 import { type Component } from 'solid-js'
+import { Icon } from '@iconify-icon/solid'
 
 const Header: Component = () => {
   return (
-    <div class='flex h-dvh items-center justify-center'>
+    <div class='flex h-dvh items-center justify-center text-center'>
       <ProfilePicture />
     </div>
   )
@@ -16,8 +17,9 @@ const ProfilePicture: Component = () => {
         src='man-technologist_1f468-200d-1f4bb.png'
         alt='My profile picture:Man technologist emoji'
       />
-      <figcaption class='space-y-5 text-center'>
-        <h1>
+      <figcaption class='space-y-5'>
+        <h1 class='inline-flex items-center gap-2'>
+          <Icon class='text-4xl' icon={'noto:waving-hand'} />
           Hi, I'm <span class='font-semibold'>Thuyen Code</span>!
         </h1>
         <h2 class='capitalize'>A no-job developer</h2>

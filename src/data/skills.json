@@ -1,0 +1,74 @@
+[
+  {
+    "name": "HTML",
+    "icon": "skill-icons:html",
+    "color": "#e14e1d",
+    "id": "html"
+  },
+  {
+    "name": "CSS",
+    "icon": "skill-icons:css",
+    "color": "#0277bd",
+    "id": "css"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "skill-icons:javascript",
+    "color": "#f0db4f",
+    "id": "javascript"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "skill-icons:typescript",
+    "color": "#007acc",
+    "id": "typescript"
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": "skill-icons:tailwindcss-light",
+    "color": "#14c6b7",
+    "id": "tailwindcss"
+  },
+  {
+    "name": "React",
+    "icon": "skill-icons:react-light",
+    "color": "#00d8ff",
+    "id": "react"
+  },
+  {
+    "name": "Vite",
+    "icon": "skill-icons:vite-light",
+    "color": "#646cffaa",
+    "id": "vite"
+  },
+  {
+    "name": "Next JS",
+    "icon": "skill-icons:nextjs-light",
+    "color": "#f4f2ed",
+    "id": "nextjs"
+  },
+  {
+    "name": "Rust",
+    "icon": "skill-icons:rust",
+    "color": "#e43717",
+    "id": "rust"
+  },
+  {
+    "name": "Git",
+    "icon": "skill-icons:git",
+    "color": "#f03c2e",
+    "id": "git"
+  },
+  {
+    "name": "Linux",
+    "icon": "skill-icons:linux-light",
+    "color": "#ffc107",
+    "id": "linux"
+  },
+  {
+    "name": "Solid JS",
+    "icon": "skill-icons:solidjs-light",
+    "color": "#dcf2fd",
+    "id": "solidjs"
+  }
+]
