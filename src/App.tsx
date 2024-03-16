@@ -1,9 +1,12 @@
 import { type Component } from 'solid-js'
+import Header from './components/Header'
+import MyWorks from './components/MyWorks'
 
 const App: Component = () => {
   return (
     <>
-      <header class='bg-main font-serif'>Hello</header>
+      <Header />
+      <MyWorks />
     </>
   )
 }

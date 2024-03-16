@@ -2,10 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.solid:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@layer base {
+  h1 {
+    @apply font-serif text-4xl font-semibold;
+  }
+  h2 {
+    @apply font-serif text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+  p {
+    @apply text-base;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
 }

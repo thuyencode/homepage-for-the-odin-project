@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.bunny.net" />
     <link
-      href="https://fonts.bunny.net/css?family=abhaya-libre:400,500|inter:400,500"
+      href="https://fonts.bunny.net/css?family=abhaya-libre:400,600|inter:400,500"
       rel="stylesheet"
     />
     <title>Vite + Solid + DaisyUI + TS</title>
   </head>
   <body class="bg-white">
-    <div id="root"></div>
+    <div class="absolute -z-10 h-32 w-full bg-main"></div>
+    <div class="absolute top-10 -z-10 h-96 w-full -skew-y-6 bg-main"></div>
+    <div class="container mx-auto" id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
