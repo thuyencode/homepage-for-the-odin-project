@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Calculator",
+    "id": "calculator",
+    "tech-stacks": ["typescript", "react-light", "tailwindcss-light"]
+  },
+  {
+    "name": "Drum Machine",
+    "id": "drum-machine",
+    "tech-stacks": ["typescript", "react-light", "tailwindcss-light"]
+  },
+  {
+    "name": "Etch a Sketch",
+    "id": "etch-a-sketch",
+    "tech-stacks": ["html", "typescript", "tailwindcss-light"]
+  },
+  {
+    "name": "Markdown Previewer",
+    "id": "markdown-previewer",
+    "tech-stacks": ["typescript", "react-light", "tailwindcss-light"]
+  },
+  {
+    "name": "Pomodoro Clock",
+    "id": "pomodoro-clock",
+    "tech-stacks": ["typescript", "react-light", "tailwindcss-light"]
+  },
+  {
+    "name": "Tic Tac Toe",
+    "id": "tic-tac-toe",
+    "tech-stacks": ["html", "typescript", "tailwindcss-light"]
+  }
+]

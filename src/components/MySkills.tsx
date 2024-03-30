@@ -2,7 +2,7 @@ import { Icon } from '@iconify-icon/solid'
 import { For, type Component } from 'solid-js'
 import skillsJSON from '../data/skills.json'
 
-interface Skill {
+interface ISkill {
   name: string
   icon: string
   color: string
@@ -23,7 +23,7 @@ const MySkills: Component = () => {
   )
 }
 
-const SkillSet: Component<Skill> = (props) => {
+const SkillSet: Component<ISkill> = (props) => {
   return (
     <div
       class={`hover:drop-shadow-${props.id} min-w-32 duration-150 hover:scale-110`}
