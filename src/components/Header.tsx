@@ -20,7 +20,7 @@ const ProfilePicture: Component = () => {
       <figcaption class='space-y-5'>
         <h1 class='inline-flex items-center gap-2'>
           <Icon class='text-4xl' icon={'noto:waving-hand'} />
-          Hi, I'm <span class='font-semibold'>Thuyen Code</span>!
+          Hi, I'm <span class='font-bold'>Thuyen Code</span>!
         </h1>
         <h2>A job-less developer</h2>
       </figcaption>

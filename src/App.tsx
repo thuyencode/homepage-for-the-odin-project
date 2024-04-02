@@ -1,14 +1,16 @@
 import { type Component } from 'solid-js'
 import Header from './components/Header'
 import MySkills from './components/MySkills'
-import Projects from './components/Projects'
+import MyProjects from './components/MyProjects'
+import Contact from './components/Contact'
 
 const App: Component = () => {
   return (
     <>
       <Header />
       <MySkills />
-      <Projects />
+      <MyProjects />
+      <Contact />
     </>
   )
 }

@@ -11,14 +11,18 @@ export default {
         main: '#0791B1'
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans]
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        mono: ['Fira Code', ...defaultTheme.fontFamily.mono]
       },
       dropShadow: Object.fromEntries(
         skillsJSON.map((skill) => [
           skill.id,
           `0 0 2em ${hexToRgba(skill.color, 0.5)}`
         ])
-      )
+      ),
+      screens: {
+        xs: '475px'
+      }
     }
   },
   safelist: skillsJSON.map((skill) => `hover:drop-shadow-${skill.id}`),
