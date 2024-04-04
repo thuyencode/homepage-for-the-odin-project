@@ -11,12 +11,15 @@ interface ISkill {
 
 const MySkills: Component = () => {
   return (
-    <div class='flex min-h-dvh flex-col items-center justify-center gap-20 px-7 text-center'>
+    <div
+      class='flex min-h-dvh flex-col items-center justify-center gap-20 px-7 text-center'
+      id='skills'
+    >
       <h1 class='inline-flex items-center font-bold'>
         <Icon class='mr-2 text-4xl' icon={'noto:man-mechanic'} />
         My Skills
       </h1>
-      <div class='xs:grid-cols-3 grid grid-cols-2 gap-10 max-sm:gap-x-5 md:grid-cols-4 lg:gap-x-20'>
+      <div class='grid grid-cols-2 gap-10 max-sm:gap-x-5 xs:grid-cols-3 md:grid-cols-4 lg:gap-x-20'>
         <For each={skillsJSON}>{(skill) => <SkillSet {...skill} />}</For>
       </div>
     </div>

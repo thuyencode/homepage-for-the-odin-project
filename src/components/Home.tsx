@@ -1,9 +1,9 @@
 import { type Component } from 'solid-js'
 import { Icon } from '@iconify-icon/solid'
 
-const Header: Component = () => {
+const Home: Component = () => {
   return (
-    <div class='flex h-dvh items-center justify-center text-center'>
+    <div class='flex h-dvh items-center justify-center text-center' id='home'>
       <ProfilePicture />
     </div>
   )
@@ -28,4 +28,4 @@ const ProfilePicture: Component = () => {
   )
 }
 
-export default Header
+export default Home

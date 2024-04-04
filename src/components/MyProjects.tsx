@@ -14,7 +14,10 @@ interface ITechBadge {
 
 const MyProjects: Component = () => {
   return (
-    <div class='flex min-h-dvh flex-col items-center justify-center gap-20 px-7 text-center'>
+    <div
+      class='flex min-h-dvh flex-col items-center justify-center gap-20 px-7 text-center'
+      id='projects'
+    >
       <h1 class='inline-flex items-center font-bold'>
         <Icon class='mr-2 text-3xl lg:text-4xl' icon={'noto:briefcase'} />
         My Projects
@@ -33,7 +36,7 @@ const Project: Component<IProject> = (props) => {
       class='card card-compact max-w-96 rounded-none text-base-content no-underline shadow-xl duration-300 hover:scale-105'
     >
       <div class='card-body !px-0'>
-        <div class='max-xs:flex-col card-title !m-0 inline-flex items-center justify-between'>
+        <div class='card-title !m-0 inline-flex items-center justify-between max-xs:flex-col'>
           <h3 class='font-mono'>{props.name}</h3>
           <div class='inline-flex items-center gap-1'>
             <For each={props['tech-stacks']}>

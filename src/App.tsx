@@ -1,13 +1,15 @@
 import { type Component } from 'solid-js'
-import Header from './components/Header'
+import Home from './components/Home'
 import MySkills from './components/MySkills'
 import MyProjects from './components/MyProjects'
 import Contact from './components/Contact'
+import Menu from './components/Menu'
 
 const App: Component = () => {
   return (
     <>
-      <Header />
+      <Menu />
+      <Home />
       <MySkills />
       <MyProjects />
       <Contact />
