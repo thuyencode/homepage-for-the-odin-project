@@ -1,11 +1,17 @@
 import { Icon } from '@iconify-icon/solid'
 import { For, type Component } from 'solid-js'
 import skillsJSON from '../data/skills.json'
+import { type Theme } from '../types'
+import { currentTheme } from '../utils'
 
 interface ISkill {
   name: string
-  icon: string
-  color: string
+  icon: {
+    [K in Theme]: string
+  }
+  color: {
+    [K in Theme]: string
+  }
   id: string
 }
 
@@ -29,9 +35,9 @@ const MySkills: Component = () => {
 const SkillSet: Component<ISkill> = (props) => {
   return (
     <div
-      class={`hover:drop-shadow-${props.id} duration-150 hover:scale-110 max-sm:max-w-28`}
+      class={`hover:drop-shadow-${props.id}-${currentTheme()} duration-150 hover:scale-110 max-sm:max-w-28`}
     >
-      <Icon class='text-5xl' icon={props.icon} />
+      <Icon class='text-5xl' icon={props.icon[currentTheme()]} />
       <h3 class='font-mono font-medium'>{props.name}</h3>
     </div>
   )

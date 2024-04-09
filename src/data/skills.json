@@ -1,75 +1,170 @@
 [
   {
     "name": "HTML",
-    "icon": "skill-icons:html",
-    "color": "#e14e1d",
+    "icon": {
+      "light": "skill-icons:html",
+      "dark": "skill-icons:html"
+    },
+    "color": {
+      "light": "#e14e1d",
+      "dark": "#e14e1d"
+    },
     "id": "html"
   },
   {
     "name": "CSS",
-    "icon": "skill-icons:css",
-    "color": "#0277bd",
+    "icon": {
+      "light": "skill-icons:css",
+      "dark": "skill-icons:css"
+    },
+    "color": {
+      "light": "#0277bd",
+      "dark": "#0277bd"
+    },
     "id": "css"
   },
   {
     "name": "JavaScript",
-    "icon": "skill-icons:javascript",
-    "color": "#f0db4f",
+    "icon": {
+      "light": "skill-icons:javascript",
+      "dark": "skill-icons:javascript"
+    },
+    "color": {
+      "light": "#f0db4f",
+      "dark": "#f0db4f"
+    },
     "id": "javascript"
   },
   {
     "name": "TypeScript",
-    "icon": "skill-icons:typescript",
-    "color": "#007acc",
+    "icon": {
+      "light": "skill-icons:typescript",
+      "dark": "skill-icons:typescript"
+    },
+    "color": {
+      "light": "#007acc",
+      "dark": "#007acc"
+    },
     "id": "typescript"
   },
   {
     "name": "Tailwind CSS",
-    "icon": "skill-icons:tailwindcss-light",
-    "color": "#14c6b7",
+    "icon": {
+      "light": "skill-icons:tailwindcss-dark",
+      "dark": "skill-icons:tailwindcss-light"
+    },
+    "color": {
+      "light": "#14c6b7",
+      "dark": "#14c6b7"
+    },
     "id": "tailwindcss"
   },
   {
     "name": "React",
-    "icon": "skill-icons:react-light",
-    "color": "#00d8ff",
+    "icon": {
+      "light": "skill-icons:react-dark",
+      "dark": "skill-icons:react-light"
+    },
+    "color": {
+      "light": "#00d8ff",
+      "dark": "#00d8ff"
+    },
     "id": "react"
   },
   {
     "name": "Next JS",
-    "icon": "skill-icons:nextjs-light",
-    "color": "#f4f2ed",
+    "icon": {
+      "light": "skill-icons:nextjs-dark",
+      "dark": "skill-icons:nextjs-light"
+    },
+    "color": {
+      "light": "#242938",
+      "dark": "#f4f2ed"
+    },
     "id": "nextjs"
   },
   {
     "name": "Solid JS",
-    "icon": "skill-icons:solidjs-light",
-    "color": "#76b3e1",
+    "icon": {
+      "light": "skill-icons:solidjs-dark",
+      "dark": "skill-icons:solidjs-light"
+    },
+    "color": {
+      "light": "#4377bb",
+      "dark": "#76b3e1"
+    },
     "id": "solidjs"
   },
   {
     "name": "Vite",
-    "icon": "skill-icons:vite-light",
-    "color": "#646cffaa",
+    "icon": {
+      "light": "skill-icons:vite-dark",
+      "dark": "skill-icons:vite-light"
+    },
+    "color": {
+      "light": "#bd34fe",
+      "dark": "#646cffaa"
+    },
     "id": "vite"
   },
-
   {
     "name": "Rust",
-    "icon": "skill-icons:rust",
-    "color": "#e43717",
+    "icon": {
+      "light": "skill-icons:rust",
+      "dark": "skill-icons:rust"
+    },
+    "color": {
+      "light": "#e43717",
+      "dark": "#e43717"
+    },
     "id": "rust"
   },
   {
+    "name": "Java",
+    "icon": {
+      "light": "skill-icons:java-dark",
+      "dark": "skill-icons:java-light"
+    },
+    "color": {
+      "light": "#f58219",
+      "dark": "#f58219"
+    },
+    "id": "java"
+  },
+  {
+    "name": "Bash",
+    "icon": {
+      "light": "skill-icons:bash-dark",
+      "dark": "skill-icons:bash-light"
+    },
+    "color": {
+      "light": "#47b353",
+      "dark": "#47b353"
+    },
+    "id": "bash"
+  },
+  {
     "name": "Git",
-    "icon": "skill-icons:git",
-    "color": "#f03c2e",
+    "icon": {
+      "light": "skill-icons:git",
+      "dark": "skill-icons:git"
+    },
+    "color": {
+      "light": "#f03c2e",
+      "dark": "#f03c2e"
+    },
     "id": "git"
   },
   {
     "name": "Linux",
-    "icon": "skill-icons:linux-light",
-    "color": "#ffc107",
+    "icon": {
+      "light": "skill-icons:linux-dark",
+      "dark": "skill-icons:linux-light"
+    },
+    "color": {
+      "light": "#ffc107",
+      "dark": "#ffc107"
+    },
     "id": "linux"
   }
 ]
