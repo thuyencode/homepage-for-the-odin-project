@@ -4,10 +4,10 @@ import MySkills from './components/MySkills'
 import MyProjects from './components/MyProjects'
 import Contact from './components/Contact'
 import Menu from './components/Menu'
-import { darkThemeToggle, currentTheme } from './utils'
+import { themeToggle, getSystemTheme } from './utils'
 
 const App: Component = () => {
-  darkThemeToggle(currentTheme())
+  themeToggle(getSystemTheme())
 
   return (
     <>

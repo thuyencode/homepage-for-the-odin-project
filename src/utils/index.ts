@@ -1,25 +1,30 @@
+import { useMediaQuery, useStorage } from 'solidjs-use'
 import { type Theme } from '../types'
 
-export function currentTheme(): Theme {
+const isPreferredDark = useMediaQuery('(prefers-color-scheme: dark)')
+export const [state, setState] = useStorage<Theme>('theme', getChosenTheme())
+
+export function getChosenTheme(): Theme {
   if (
-    localStorage.theme === 'dark' ||
-    (!('theme' in localStorage) &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches)
+    'theme' in localStorage &&
+    (localStorage.getItem('theme') === 'light' ||
+      localStorage.getItem('theme') === 'dark')
   ) {
-    return 'dark'
+    return localStorage.getItem('theme') as Theme
   }
 
-  return 'light'
+  return getSystemTheme()
+}
+export function getSystemTheme(): Theme {
+  return isPreferredDark() ? 'dark' : 'light'
 }
 
-export function darkThemeToggle(theme: Theme): void {
+export function themeToggle(theme: Theme): void {
   if (theme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark')
   } else {
     document.documentElement.setAttribute('data-theme', 'light')
   }
 
-  if ('theme' in localStorage) {
-    localStorage.setItem('theme', theme)
-  }
+  setState(theme)
 }

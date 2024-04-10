@@ -2,7 +2,7 @@ import { Icon } from '@iconify-icon/solid'
 import { For, type Component } from 'solid-js'
 import projectsJSON from '../data/projects.json'
 import { type Theme } from '../types'
-import { currentTheme } from '../utils'
+import { state } from '../utils'
 
 interface IProject {
   name: string
@@ -43,7 +43,7 @@ const Project: Component<IProject> = (props) => {
         <div class='card-title !m-0 inline-flex items-center justify-between max-xs:flex-col'>
           <h3 class='font-mono'>{props.name}</h3>
           <div class='inline-flex items-center gap-1'>
-            <For each={props['tech-stacks'][currentTheme()]}>
+            <For each={props['tech-stacks'][state()]}>
               {(tech) => <TechBadge tech={tech} />}
             </For>
           </div>
