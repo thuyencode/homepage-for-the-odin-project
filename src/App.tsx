@@ -1,22 +1,20 @@
 import { type Component } from 'solid-js'
-import Home from './components/Home'
-import MySkills from './components/MySkills'
-import MyProjects from './components/MyProjects'
 import Contact from './components/Contact'
+import Home from './components/Home'
 import Menu from './components/Menu'
-import { themeToggle, getSystemTheme } from './utils'
+import MyProjects from './components/MyProjects'
+import MySkills from './components/MySkills'
+import { ThemeProvider } from './contexts/ThemeContext'
 
 const App: Component = () => {
-  themeToggle(getSystemTheme())
-
   return (
-    <>
+    <ThemeProvider>
       <Menu />
       <Home />
       <MySkills />
       <MyProjects />
       <Contact />
-    </>
+    </ThemeProvider>
   )
 }
 

@@ -1,7 +1,7 @@
 import { Icon } from '@iconify-icon/solid'
 import { type Component } from 'solid-js'
 import { Portal } from 'solid-js/web'
-import { getSystemTheme, setState, state, themeToggle } from '../utils'
+import { useThemeContext } from '../contexts/ThemeContext'
 
 const Menu: Component = () => {
   return (
@@ -55,8 +55,10 @@ const Menu: Component = () => {
 }
 
 const ThemeController: Component = () => {
+  const { theme, setTheme, mode } = useThemeContext()
+
   function getIcon(): string {
-    switch (state()) {
+    switch (mode()) {
       case 'dark':
         return 'noto:new-moon-face'
 
@@ -64,9 +66,7 @@ const ThemeController: Component = () => {
         return 'noto:sun-with-face'
 
       default:
-        return getSystemTheme() === 'dark'
-          ? 'noto:new-moon-face'
-          : 'noto:sun-with-face'
+        return theme() === 'dark' ? 'noto:new-moon-face' : 'noto:sun-with-face'
     }
   }
 
@@ -86,8 +86,7 @@ const ThemeController: Component = () => {
       >
         <li
           onClick={() => {
-            setState('')
-            themeToggle(getSystemTheme())
+            setTheme('auto')
           }}
         >
           <input
@@ -100,7 +99,7 @@ const ThemeController: Component = () => {
         </li>
         <li
           onClick={() => {
-            themeToggle('light')
+            setTheme('light')
           }}
         >
           <input
@@ -113,7 +112,7 @@ const ThemeController: Component = () => {
         </li>
         <li
           onClick={() => {
-            themeToggle('dark')
+            setTheme('dark')
           }}
         >
           <input
